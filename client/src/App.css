@@ -1,3 +1,54 @@
+
+/*This styling lines pertained to the Navbar component. */
+ul {
+  height: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: tan;
+}
+/*********************************************************************/
+/* Styling related to main composnent*/
+
+.mainTable {
+  width: 100%;
+  font-size:xx-small;
+}
+.mainTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/**********************************************************************/
+
+/* Styling related to exam composnent*/
+
+.examForm {
+  padding: 10px;
+}
+
+.rightSection {
+  float: right;
+}
+
+/***************************************************************************************/
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "patientId": 1,
+        "age": 50,
+        "sex": "M",
+        "zipCode": "02148",
+        "bmi": 25,
+        "v": "A",
+        "examId": 3,
+        "keyFindings": "The exam was perfect.",
+        "brixiaScores": "90%",
+        "image": "../../images/pic.png"
+    },
+
+    {
+        "id": 1,
+        "patientId": 1,
+        "age": 46,
+        "sex": "F",
+        "zipCode": "02148",
+        "bmi": 23,
+        "v": "B",
+        "examId": 2,
+        "keyFindings": "The exam was perfect.",
+        "brixiaScores": "90%",
+        "image": "../../favicon.png"
+    }
+]

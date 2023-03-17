@@ -1,17 +1,34 @@
 import { useState, useEffect } from 'react';
 
-const API_ROOT = 'http://localhost:9000';
+const API_ROOT = 'https://czi-covid-lypkrzry4q-uc.a.run.app/api/exams'
+ // '/';
+// 'http://localhost:9000';
 
 export function useApi({ path } = { path: '' }) {
-  const [response, setResponse] = useState();
+  const [exams, setExams] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_ROOT}/${path}`)
+    fetch(API_ROOT)
       .then(res => res.text())
-      .then(res => setResponse(res));
+      .then(res => setExams(res));
   }, []);
 
-  return {
-    response
-  };
+  return (
+    exams
+  
+  );
 }
+
+//<div>
+//    {
+//        exams && exams.map(exam=>{
+//          return(
+//            <div key={exam.id} style={{alignItems:'center', margin:'20px 60px'}}>
+//            <h4>{exam.patientId}</h4>
+//            <p>{exam.bmi}</p>
+//
+//            </div>
+//          )
+//        })
+//      }
+//    </div>
